@@ -78,5 +78,16 @@ function toggleSidebar() {
   document.addEventListener('click', hideSidebarOnOutsideClick); 
 }
         
+// popup Announcement
+{
+  document.addEventListener('DOMContentLoaded', function() {
+    // Display the popup when the page is loaded
+    document.getElementById('popupContainer').style.display = 'flex';
+});
 
+function closePopup() {
+    document.getElementById('popupContainer').style.display = 'none';
+}
+
+}
 
